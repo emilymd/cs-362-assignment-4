@@ -2,7 +2,7 @@
 This is a GitHub repository for our Software Engineering II Assignment 4. 
 For this assignment, we have to write automated tests for this Java-based HTML web-app.
 This web-app is a Battleship game. At the time of the release uploaded to this repository,
-there are three special tools included outside of normal Battleship play:
+there are two special tools included outside of normal Battleship play:
 * Implement a Captain's Quarter on each ship. Placement is as follows
   * 1st square of Minesweeper
   * 2nd square of Destroyer
