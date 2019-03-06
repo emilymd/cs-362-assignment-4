@@ -23,8 +23,56 @@ public class BoardTest {
 
     @Test
     public void testPlaceMinesweeper() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', false));
+    }
+
+    @Test
+    public void testPlaceBattleship() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', false));
+    }
+
+    @Test
+    public void testPlaceDestroyer() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge10A() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 10, 'A', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge10I() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 10, 'I', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge1I() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'I', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperVertically() {
         assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true));
     }
+
+    @Test
+    public void testPlaceBattleshipVertically() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+    }
+
+    @Test
+    public void testPlaceDestroyerVertically() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', true));
+    }
+
+
+    //@Test
+    //public void testAttackInvalidPlacement() {
+    //    board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
+    //    Result result = board.attack(11, 'A');
+    //    assertEquals(AtackStatus.INVALID, result.getResult());
+    //}
 
     @Test
     public void testAttackEmptySquare() {
@@ -69,10 +117,21 @@ public class BoardTest {
     }
 
     @Test
-    public void testPlaceMultipleShipsOfSameType() {
+    public void testPlaceMultipleMinesweepers() {
         assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true));
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 5, 'D', true));
+    }
 
+    @Test
+    public void testPlaceMultipleBattleships() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+        assertFalse(board.placeShip(new Ship("BATTLESHIP"), 5, 'D', true));
+    }
+
+    @Test
+    public void testPlaceMultipleDestroyers() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', true));
+        assertFalse(board.placeShip(new Ship("DESTROYER"), 5, 'D', true));
     }
 
     @Test
