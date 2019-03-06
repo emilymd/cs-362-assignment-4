@@ -23,12 +23,45 @@ public class BoardTest {
 
     @Test
     public void testPlaceMinesweeper() {
-        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true));
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', false));
+    }
+
+    @Test
+    public void testPlaceBattleship() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+    }
+
+    @Test
+    public void testPlaceDestroyer() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge10A() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 10, 'A', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge10I() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 10, 'I', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge1I() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'I', false));
+    }
+
+    @Test
+    public void testPlaceMinesweeperAtEdge1A() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', false));
     }
 
     @Test
     public void testAttackEmptySquare() {
         board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
+        board.placeShip(new Ship("DESTROYER"), 1, 'B', true);
+        board.placeShip(new Ship("BATTLESHIP"), 1, 'C', true);
+
         Result result = board.attack(2, 'E');
         assertEquals(AtackStatus.MISS, result.getResult());
     }
