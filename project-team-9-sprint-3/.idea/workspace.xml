@@ -4,6 +4,7 @@
     <list default="true" id="348efc13-eeee-4601-801b-48955e1dd61b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cs361/battleships/models/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cs361/battleships/models/BoardTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-941">
-                    <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+                  <state relative-caret-position="493">
+                    <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
                   </state>
                 </provider>
               </entry>
@@ -50,14 +51,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="119">
+              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
               <folding>
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
                 <element signature="e#1224#1225#0" expanded="true" />
                 <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1656#1657#0" expanded="true" />
+                <element signature="e#1737#1738#0" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/AtackStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -153,7 +184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551845255580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551847845674" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/cs361/battleships/models" />
   </component>
   <component name="RunDashboard">
@@ -220,28 +251,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest_testPlaceMultipleShipsOfSameType - 2019.03.05 at 17h 31m 32s.xml">
-      <configuration name="BoardTest.testPlaceMultipleShipsOfSameType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 17h 33m 53s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 05m 58s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 13m 19s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 09m 24s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 48m 40s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 14m 12s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 50m 09s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 16m 45s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 50m 19s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 22m 08s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 50m 26s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 37m 41s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 19h 51m 15s.xml">
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 39m 18s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 47m 47s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 48m 19s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 48m 30s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -263,7 +300,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.032822758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24726477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32932165" />
       <window_info anchor="bottom" id="Terminal" weight="0.32932165" />
@@ -341,9 +378,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -358,22 +392,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/AtackStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-941">
-          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        <state relative-caret-position="493">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+        <state relative-caret-position="119">
+          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
           <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
             <element signature="e#1224#1225#0" expanded="true" />
             <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
           </folding>
         </state>
       </provider>

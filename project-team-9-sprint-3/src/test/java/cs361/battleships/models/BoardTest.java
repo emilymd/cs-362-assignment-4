@@ -28,7 +28,7 @@ public class BoardTest {
 
     @Test
     public void testPlaceBattleship() {
-        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', false));
     }
 
     @Test
@@ -52,18 +52,32 @@ public class BoardTest {
     }
 
     @Test
-    public void testPlaceMinesweeperAtEdge1A() {
-        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', false));
+    public void testPlaceMinesweeperVertically() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true));
+    }
+
+    @Test
+    public void testPlaceBattleshipVertically() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+    }
+
+    @Test
+    public void testPlaceDestroyerVertically() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', true));
     }
 
     @Test
     public void testAttackEmptySquare() {
         board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
-        board.placeShip(new Ship("DESTROYER"), 1, 'B', true);
-        board.placeShip(new Ship("BATTLESHIP"), 1, 'C', true);
-
         Result result = board.attack(2, 'E');
         assertEquals(AtackStatus.MISS, result.getResult());
+    }
+
+    @Test
+    public void testAttackInvalidPlacement() {
+        board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
+        Result result = board.attack(11, 'A');
+        assertEquals(AtackStatus.INVALID, result.getResult());
     }
 
     @Test
