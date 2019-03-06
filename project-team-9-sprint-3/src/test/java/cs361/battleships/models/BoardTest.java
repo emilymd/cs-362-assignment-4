@@ -67,12 +67,6 @@ public class BoardTest {
     }
 
 
-    @Test
-    public void testAttackInvalidPlacement() {
-    board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
-    Result result = board.attack(11, 'A');
-    assertEquals(AtackStatus.INVALID, result.getResult());
-
 
     @Test
     public void testAttackEmptySquare() {
