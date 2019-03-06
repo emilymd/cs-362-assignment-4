@@ -116,13 +116,150 @@ public class ShipTest {
     }
 
     @Test
-    public void testIsAtLocation() {
-        Ship minesweeper = new Ship("BATTLESHIP");
+    public void testMinesweeperIsAtLocation() {
+        Ship minesweeper = new Ship("MINESWEEPER");
         minesweeper.place('A', 1, true);
 
         assertTrue(minesweeper.isAtLocation(new Square(1, 'A')));
         assertTrue(minesweeper.isAtLocation(new Square(2, 'A')));
     }
+
+    //NEW by Emily
+    @Test
+    public void testDestroyerIsAtLocation(){
+        Ship destroyer = new Ship("DESTROYER");
+        destroyer.place('A',1,false);
+
+        assertTrue(destroyer.isAtLocation(new Square(1,'A')));
+        assertTrue(destroyer.isAtLocation(new Square(1,'B')));
+        assertTrue(destroyer.isAtLocation(new Square(1,'C')));
+    }
+
+    @Test
+    public void testBattleshipIsAtLocation(){
+        Ship battleship = new Ship("BATTLESHIP");
+        battleship.place('A',1,false);
+
+        assertTrue(battleship.isAtLocation(new Square(1,'A')));
+        assertTrue(battleship.isAtLocation(new Square(1,'B')));
+        assertTrue(battleship.isAtLocation(new Square(1,'C')));
+        assertTrue(battleship.isAtLocation(new Square(1,'D')));
+    }
+
+    @Test
+    public void testMinesweeperIsNotAtLocation(){
+        Ship minesweeper = new Ship("MINESWEEPER");
+        minesweeper.place('A',1,true);
+
+        assertFalse(minesweeper.isAtLocation(new Square(3,'B')));
+        assertFalse(minesweeper.isAtLocation(new Square(4,'B')));
+    }
+
+    @Test
+    public void testDestroyerIsNotAtLocation(){
+        Ship destroyer = new Ship("DESTROYER");
+        destroyer.place('A',1,true);
+
+        assertFalse(destroyer.isAtLocation(new Square(3,'B')));
+        assertFalse(destroyer.isAtLocation(new Square(4,'B')));
+        assertFalse(destroyer.isAtLocation(new Square(5,'B')));
+    }
+
+    @Test
+    public void testBattleshipIsNotAtLocation(){
+        Ship battleship = new Ship("BATTLESHIP");
+        battleship.place('A',1,true);
+
+        assertFalse(battleship.isAtLocation(new Square(3,'B')));
+        assertFalse(battleship.isAtLocation(new Square(4,'B')));
+        assertFalse(battleship.isAtLocation(new Square(5,'B')));
+        assertFalse(battleship.isAtLocation(new Square(6,'B')));
+    }
+
+    @Test
+    public void testMinesweeperMiss(){
+        Ship minesweeper = new Ship("MINESWEEPER");
+        minesweeper.place('A',1,true);
+
+        Result result = minesweeper.attack(1,'B');
+
+        assertEquals(AtackStatus.MISS,result.getResult());
+        assertNotEquals(minesweeper, result.getShip());
+        assertEquals(new Square(1,'B'),result.getLocation());
+    }
+
+    @Test
+    public void testDestroyerMiss(){
+        Ship destroyer = new Ship("DESTROYER");
+        destroyer.place('A',1,false);
+
+        Result result = destroyer.attack(5,'A');
+
+        assertEquals(AtackStatus.MISS,result.getResult());
+        assertNotEquals(destroyer, result.getShip());
+        assertEquals(new Square(5,'A'),result.getLocation());
+    }
+
+    @Test
+    public void testBattleshipMiss(){
+        Ship battleship = new Ship("BATTLESHIP");
+        battleship.place('A',1,true);
+
+        Result result = battleship.attack(1,'B');
+
+        assertEquals(AtackStatus.MISS,result.getResult());
+        assertNotEquals(battleship, result.getShip());
+        assertEquals(new Square(1,'B'),result.getLocation());
+    }
+
+    @Test
+    public void testMinesweeperHit() {
+        Ship minesweeper = new Ship("MINESWEEPER");
+        minesweeper.place('A', 1, true);
+
+        Result result = minesweeper.attack(2, 'A');
+        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(minesweeper, result.getShip());
+        assertEquals(new Square(2, 'A'), result.getLocation());
+    }
+
+    @Test
+    public void testDestroyerHit() {
+        Ship destroyer = new Ship("DESTROYER");
+        destroyer.place('A', 1, true);
+
+        Result result = destroyer.attack(1, 'A');
+        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(destroyer, result.getShip());
+        assertEquals(new Square(1, 'A'), result.getLocation());
+    }
+
+    @Test
+    public void testBattleshipCapHit() {
+        Ship battleship = new Ship("BATTLESHIP");
+        battleship.place('A', 1, true);
+        var result = battleship.attack(3, 'A');
+        assertEquals(AtackStatus.HIDDEN, result.getResult());
+    }
+
+    @Test
+    public void testMinesweeperCapSunk () {
+        Ship minesweeper = new Ship("MINESWEEPER");
+        minesweeper.place('A', 1, true);
+        //minesweeper.attack(3,'A');
+        var result = minesweeper.attack(1,'A');
+        assertEquals(AtackStatus.SUNK, result.getResult());
+    }
+
+    @Test
+    public void testMinesweeperNotHidden(){
+        Ship minesweeper = new Ship("MINESWEEPER");
+        minesweeper.place('A',1,true);
+        var result = minesweeper.attack(1,'A');
+        assertNotEquals(AtackStatus.HIDDEN,result.getResult());
+    }
+
+    //End of NEW by Emily
 
     @Test
     public void testHit() {
