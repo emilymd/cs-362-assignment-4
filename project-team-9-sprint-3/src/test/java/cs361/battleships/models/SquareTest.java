@@ -110,5 +110,21 @@ public class SquareTest {
     }
 
     //Test Captain's quarters
+    @Test
+    public void testCapHitIsFalse(){
+        Square s = new Square(8, 'A');
+
+        assertFalse(s.getCapHit());
+
+    }
+
+    @Test
+    public void testCapHitIsTrue(){
+        Square s = new Square(8, 'A');
+        s.setCapHit();
+
+        assertTrue(s.getCapHit());
+
+    }
 
 }
