@@ -4,7 +4,6 @@
     <list default="true" id="348efc13-eeee-4601-801b-48955e1dd61b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cs361/battleships/models/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cs361/battleships/models/BoardTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+            <state relative-caret-position="632">
+              <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
               <folding>
                 <element signature="e#392#393#0" expanded="true" />
                 <element signature="e#476#477#0" expanded="true" />
@@ -184,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551847845674" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551849513619" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/cs361/battleships/models" />
   </component>
   <component name="RunDashboard">
@@ -251,15 +250,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Board_Test_All - 2019.03.05 at 20h 05m 58s.xml">
-      <configuration name="Board Test All" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 20h 09m 24s.xml">
-      <configuration name="Board Test All" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Board_Test_All - 2019.03.05 at 20h 14m 12s.xml">
-      <configuration name="Board Test All" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Board_Test_All - 2019.03.05 at 20h 16m 45s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
@@ -281,6 +271,15 @@
     <history-entry file="Board_Test_All - 2019.03.05 at 20h 48m 30s.xml">
       <configuration name="Board Test All" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 52m 40s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 20h 54m 02s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Board_Test_All - 2019.03.05 at 21h 08m 12s.xml">
+      <configuration name="Board Test All" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +299,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24726477" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.032822758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32932165" />
       <window_info anchor="bottom" id="Terminal" weight="0.32932165" />
@@ -308,7 +307,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32932165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32932165" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.032822758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cs361/battleships/models/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+        <state relative-caret-position="632">
+          <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
           <folding>
             <element signature="e#392#393#0" expanded="true" />
             <element signature="e#476#477#0" expanded="true" />

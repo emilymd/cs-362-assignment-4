@@ -66,18 +66,19 @@ public class BoardTest {
         assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', true));
     }
 
+
+    //@Test
+    //public void testAttackInvalidPlacement() {
+    //    board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
+    //    Result result = board.attack(11, 'A');
+    //    assertEquals(AtackStatus.INVALID, result.getResult());
+    //}
+
     @Test
     public void testAttackEmptySquare() {
         board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
         Result result = board.attack(2, 'E');
         assertEquals(AtackStatus.MISS, result.getResult());
-    }
-
-    @Test
-    public void testAttackInvalidPlacement() {
-        board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
-        Result result = board.attack(11, 'A');
-        assertEquals(AtackStatus.INVALID, result.getResult());
     }
 
     @Test
@@ -116,10 +117,21 @@ public class BoardTest {
     }
 
     @Test
-    public void testPlaceMultipleShipsOfSameType() {
+    public void testPlaceMultipleMinesweepers() {
         assertTrue(board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true));
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 5, 'D', true));
+    }
 
+    @Test
+    public void testPlaceMultipleBattleships() {
+        assertTrue(board.placeShip(new Ship("BATTLESHIP"), 1, 'A', true));
+        assertFalse(board.placeShip(new Ship("BATTLESHIP"), 5, 'D', true));
+    }
+
+    @Test
+    public void testPlaceMultipleDestroyers() {
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 1, 'A', true));
+        assertFalse(board.placeShip(new Ship("DESTROYER"), 5, 'D', true));
     }
 
     @Test
