@@ -152,4 +152,62 @@ public class gameTest {
         assertTrue(game.placeShip(ship, 5, 'D', false));
 
     }
+
+
+
+    //Attack tests
+
+    @Test
+    public void testGoodAttackPlacement(){
+
+        assertTrue(game.attack(5, 'B'));
+    }
+
+    @Test
+    public void testBadSecondAttack(){
+        //bad attacks happen on already attacked squares
+        game.attack(5, 'B');
+        assertFalse(game.attack(5, 'B'));
+
+    }
+
+    @Test
+    public void testGoodSecondAttack(){
+        game.attack(7,'C');
+        assertTrue(game.attack(7, 'A'));
+
+    }
+
+    //SONAR PULSE TESTS - more rigorous tests happen in Board
+
+    @Test
+    public void testSonarPulse(){
+
+        assertTrue(game.sonarPulse(4, 'E'));
+    }
+
+    //Random Vertical, Row and Col testing
+
+    @Test
+    public void testRandRow(){
+        int row = game.getRandRow();
+
+        assertTrue(row >= 1 && row <= 10);
+    }
+
+    @Test
+    public void testRandCol(){
+        char col = game.getRandCol();
+
+        assertTrue(col >= 'A' && col <= 'J');
+
+    }
+
+    @Test
+    public void testRandVertical(){
+        boolean ver = game.getRandVert();
+
+        assertTrue(ver || !ver );
+
+    }
 }

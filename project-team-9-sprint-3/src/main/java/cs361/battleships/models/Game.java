@@ -1,5 +1,6 @@
 package cs361.battleships.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
@@ -66,4 +67,13 @@ public class Game {
     private boolean randVertical() {
         return new Random().nextBoolean();
     }
+
+    @JsonIgnore
+    public char getRandCol(){ return randCol(); }
+
+    @JsonIgnore
+    public int getRandRow(){ return randRow(); }
+
+    @JsonIgnore
+    public boolean getRandVert(){ return randVertical(); }
 }
