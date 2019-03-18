@@ -78,7 +78,7 @@ public class Ship {
 		var attackedSquare = square.get();
 		if (attackedSquare.isHit()) {
 			var result = new Result(attackedLocation);
-			result.setResult(AtackStatus.INVALID);
+			result.setResult(AttackStatus.INVALID);
 			return result;
 		}
 		if(attackedSquare.equals(captainsQuarters)) {
@@ -90,7 +90,7 @@ public class Ship {
 		        for(Square s : occupiedSquares) {
 		            s.hit();
                 }
-                result.setResult(AtackStatus.SUNK);
+                result.setResult(AttackStatus.SUNK);
                 return result;
             }
 
@@ -99,18 +99,18 @@ public class Ship {
                     for(Square s : occupiedSquares) {
                         s.hit();
                     }
-                    result.setResult(AtackStatus.SUNK);
+                    result.setResult(AttackStatus.SUNK);
                     return result;
                 }
                 attackedSquare.setCapHit();
-                result.setResult(AtackStatus.HIDDEN);
+                result.setResult(AttackStatus.HIDDEN);
                 return result;
             }
 		}
 		attackedSquare.hit();
 		var result = new Result(attackedLocation);
 		result.setShip(this);
-		result.setResult(AtackStatus.HIT);
+		result.setResult(AttackStatus.HIT);
 		return result;
 	}
 

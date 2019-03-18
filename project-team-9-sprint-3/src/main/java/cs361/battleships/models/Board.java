@@ -51,7 +51,7 @@ public class Board {
 	 */
 	public Result attack(int x, char y) {
 		Result attackResult = attack(new Square(x, y));
-		if(attackResult.getResult() == AtackStatus.HIDDEN) {
+		if(attackResult.getResult() == AttackStatus.HIDDEN) {
 		    //don't add attackResult
             return attackResult;
         }
@@ -62,7 +62,7 @@ public class Board {
 	private Result attack(Square s) {
 		if (attacks.stream().anyMatch(r -> r.getLocation().equals(s))) {
 			var attackResult = new Result(s);
-			attackResult.setResult(AtackStatus.INVALID);
+			attackResult.setResult(AttackStatus.INVALID);
 			return attackResult;
 		}
 		var shipsAtLocation = ships.stream().filter(ship -> ship.isAtLocation(s)).collect(Collectors.toList());
@@ -72,9 +72,9 @@ public class Board {
 		}
 		var hitShip = shipsAtLocation.get(0);
 		var attackResult = hitShip.attack(s.getRow(), s.getColumn());
-		if (attackResult.getResult() == AtackStatus.SUNK) {
+		if (attackResult.getResult() == AttackStatus.SUNK) {
 			if (ships.stream().allMatch(ship -> ship.isSunk())) {
-				attackResult.setResult(AtackStatus.SURRENDER);
+				attackResult.setResult(AttackStatus.SURRENDER);
 			}
 		}
 		return attackResult;
