@@ -125,10 +125,10 @@ td:hover {
 div#InstructionsBox {
     font-family: 'Schoolbell', cursive;
     border: 1px solid black;
-    width: 400px;
+    width: 650px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 div#InstructionsHeader {
