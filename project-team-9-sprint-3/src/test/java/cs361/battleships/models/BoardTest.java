@@ -67,7 +67,6 @@ public class BoardTest {
     }
 
 
-
     @Test
     public void testAttackEmptySquare() {
     board.placeShip(new Ship("MINESWEEPER"), 1, 'A', true);
