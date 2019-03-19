@@ -183,7 +183,7 @@ public class ShipTest {
 
         Result result = minesweeper.attack(1,'B');
 
-        assertEquals(AtackStatus.MISS,result.getResult());
+        assertEquals(AttackStatus.MISS,result.getResult());
         assertNotEquals(minesweeper, result.getShip());
         assertEquals(new Square(1,'B'),result.getLocation());
     }
@@ -195,7 +195,7 @@ public class ShipTest {
 
         Result result = destroyer.attack(5,'A');
 
-        assertEquals(AtackStatus.MISS,result.getResult());
+        assertEquals(AttackStatus.MISS,result.getResult());
         assertNotEquals(destroyer, result.getShip());
         assertEquals(new Square(5,'A'),result.getLocation());
     }
@@ -207,7 +207,7 @@ public class ShipTest {
 
         Result result = battleship.attack(1,'B');
 
-        assertEquals(AtackStatus.MISS,result.getResult());
+        assertEquals(AttackStatus.MISS,result.getResult());
         assertNotEquals(battleship, result.getShip());
         assertEquals(new Square(1,'B'),result.getLocation());
     }
@@ -218,7 +218,7 @@ public class ShipTest {
         minesweeper.place('A', 1, true);
 
         Result result = minesweeper.attack(2, 'A');
-        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(AttackStatus.HIT, result.getResult());
         assertEquals(minesweeper, result.getShip());
         assertEquals(new Square(2, 'A'), result.getLocation());
     }
@@ -229,7 +229,7 @@ public class ShipTest {
         destroyer.place('A', 1, true);
 
         Result result = destroyer.attack(1, 'A');
-        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(AttackStatus.HIT, result.getResult());
         assertEquals(destroyer, result.getShip());
         assertEquals(new Square(1, 'A'), result.getLocation());
     }
@@ -239,7 +239,7 @@ public class ShipTest {
         Ship battleship = new Ship("BATTLESHIP");
         battleship.place('A', 1, true);
         var result = battleship.attack(3, 'A');
-        assertEquals(AtackStatus.HIDDEN, result.getResult());
+        assertEquals(AttackStatus.HIDDEN, result.getResult());
     }
 
     @Test
@@ -248,7 +248,7 @@ public class ShipTest {
         minesweeper.place('A', 1, true);
         //minesweeper.attack(3,'A');
         var result = minesweeper.attack(1,'A');
-        assertEquals(AtackStatus.SUNK, result.getResult());
+        assertEquals(AttackStatus.SUNK, result.getResult());
     }
 
     @Test
@@ -256,7 +256,7 @@ public class ShipTest {
         Ship minesweeper = new Ship("MINESWEEPER");
         minesweeper.place('A',1,true);
         var result = minesweeper.attack(1,'A');
-        assertNotEquals(AtackStatus.HIDDEN,result.getResult());
+        assertNotEquals(AttackStatus.HIDDEN,result.getResult());
     }
 
     //End of NEW by Emily
@@ -267,7 +267,7 @@ public class ShipTest {
         minesweeper.place('A', 1, true);
 
         Result result = minesweeper.attack(1, 'A');
-        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(AttackStatus.HIT, result.getResult());
         assertEquals(minesweeper, result.getShip());
         assertEquals(new Square(1, 'A'), result.getLocation());
     }
@@ -280,7 +280,7 @@ public class ShipTest {
         Result result = minesweeper.attack(1, 'A');
         minesweeper.attack(2, 'A');
 
-        assertEquals(AtackStatus.SUNK, result.getResult());
+        assertEquals(AttackStatus.SUNK, result.getResult());
         assertEquals(minesweeper, result.getShip());
         assertEquals(new Square(1, 'A'), result.getLocation());
     }
@@ -299,9 +299,9 @@ public class ShipTest {
         Ship minesweeper = new Ship("MINESWEEPER");
         minesweeper.place('A', 1, true);
         var result = minesweeper.attack(2, 'A');
-        assertEquals(AtackStatus.HIT, result.getResult());
+        assertEquals(AttackStatus.HIT, result.getResult());
         result = minesweeper.attack(2, 'A');
-        assertEquals(AtackStatus.INVALID, result.getResult());
+        assertEquals(AttackStatus.INVALID, result.getResult());
     }
 
     @Test
@@ -319,7 +319,7 @@ public class ShipTest {
         Ship destroyer = new Ship("DESTROYER");
         destroyer.place('A', 1, true);
         var result = destroyer.attack(2, 'A');
-        assertEquals(AtackStatus.HIDDEN, result.getResult());
+        assertEquals(AttackStatus.HIDDEN, result.getResult());
     }
 
     @Test
@@ -328,6 +328,6 @@ public class ShipTest {
         battleship.place('A', 1, true);
         battleship.attack(3,'A');
         var result = battleship.attack(3,'A');
-        assertEquals(AtackStatus.SUNK, result.getResult());
+        assertEquals(AttackStatus.SUNK, result.getResult());
     }
 }
