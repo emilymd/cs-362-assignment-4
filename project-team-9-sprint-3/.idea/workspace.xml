@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a0da961-ab6c-406d-87ac-d11f95c84b24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photos/BattleshipDesigns1:3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/photos/BattleshipDesigns2:3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/photos/BattleshipDesigns3:3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/ApplicationController/index.ftl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/ApplicationController/index.ftl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cs361/battleships/models/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cs361/battleships/models/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cs361/battleships/models/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cs361/battleships/models/Ship.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,28 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conf/Filters.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conf/Module.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conf/Routes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="612">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -90,11 +75,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/views/ApplicationController/index.ftl.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="564">
               <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+                <element signature="e#3655#3656#0" expanded="true" />
+                <element signature="e#4054#4055#0" expanded="true" />
+                <element signature="e#4141#4142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -128,8 +138,9 @@
         <option value="$PROJECT_DIR$/src/main/java/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Submarine.java" />
         <option value="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java" />
         <option value="$PROJECT_DIR$/src/main/java/views/ApplicationController/index.ftl.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java" />
       </list>
     </option>
   </component>
@@ -140,9 +151,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
-    <option name="width" value="1618" />
+    <option name="width" value="974" />
     <option name="height" value="1167" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,6 +186,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-team-9-sprint-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-team-9-sprint-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-team-9-sprint-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-team-9-sprint-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-team-9-sprint-3" type="b2602c69:ProjectViewProjectNode" />
@@ -264,10 +291,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1704" height="1167" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22445256" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11140725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,7 +303,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326886" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33173537" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +311,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989059" weight="0.3326886" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010941" side_tool="true" weight="0.3326886" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989059" weight="0.32688588" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989059" weight="0.3240652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,30 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="86" column="29" lean-forward="true" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assets/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -447,6 +450,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
           <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs361/battleships/models/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#3655#3656#0" expanded="true" />
+            <element signature="e#4054#4055#0" expanded="true" />
+            <element signature="e#4141#4142#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

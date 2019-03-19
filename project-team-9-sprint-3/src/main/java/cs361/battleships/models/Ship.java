@@ -34,6 +34,9 @@ public class Ship {
 			case "BATTLESHIP":
 				size = 4;
 				break;
+			case "SUBMARINE":
+				size = 5;
+				break;
 		}
 	}
 
@@ -42,14 +45,26 @@ public class Ship {
 	}
 
 	public void place(char col, int row, boolean isVertical) {
-		for (int i=0; i<size; i++) {
-			if (isVertical) {
-				occupiedSquares.add(new Square(row+i, col));
-			} else {
-				occupiedSquares.add(new Square(row, (char) (col + i)));
+		if (size == 5){
+			if (isVertical){
+				occupiedSquares.add(new Square(row, col));
+				occupiedSquares.add(new Square(row + 1, col));
+				occupiedSquares.add(new Square(row + 2, col));
+				occupiedSquares.add(new Square(row + 3, col));
+				occupiedSquares.add(new Square(row + 2, (char) (col + 1)));
+				captainsQuarters = occupiedSquares.get(3);
 			}
 		}
-		captainsQuarters = occupiedSquares.get(size-2);
+		else {
+			for (int i = 0; i < size; i++) {
+				if (isVertical) {
+					occupiedSquares.add(new Square(row + i, col));
+				} else {
+					occupiedSquares.add(new Square(row, (char) (col + i)));
+				}
+			}
+			captainsQuarters = occupiedSquares.get(size - 2);
+		}
 	}
 
 	public Square getCaptainsQuarters() { return captainsQuarters; }
