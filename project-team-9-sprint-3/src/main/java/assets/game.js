@@ -133,24 +133,23 @@ function cellClick() {
 
         if (sonarIsChecked){
 
-            //get all attacks on the player board? or on the opponent board? may need to use
-            document.getElementById("opponent").attacks.forEach((attack) => {
+            /*//get all attacks on the player board? or on the opponent board? may need to use
+            var opBoard = document.getElementById("opponent");
+            for (var i = 0, row; row = opBoard.row[i]; i++) {
 
-                //going to try first with player board
-                //document.getElementById("player").attacks.forEach((attack) => {
-                let className;
+                for(var j = 0, col; col = row.cells[j]; j++){
+                    if(col.classList.contains("sunk")){
+                        //try adding numShipsSunk here
+                        //Intellij requires payment to test javascript so we
+                        //Will need to test manually if we can get game working...
+                        console.log("adding ship to sunk count!");
+                        numShipsSunk++;
+                    }
 
-                //check if any attacks are sunk, if yes increment the number of sunk ships
-                //no cap needed on sunk ships, as soon as 1 has been sunk then sonar will be activated so no need to worry
-                //about whether or not ships are counted twice
-                if (attack.result === "SUNK"){
-                    //try adding numShipsSunk here
-                    //Intellij requires payment to test javascript so we
-                    //Will need to test manually if we can get game working...
-                    console.log("adding ship to sunk count!");
-                    numShipsSunk++;
                 }
-            });
+
+            }*/
+
 
         //numShipsSunk now being changed above, not sure if this is actually what we want
             if(numShipsSunk < 1 || numSonarUsed >= 2){
