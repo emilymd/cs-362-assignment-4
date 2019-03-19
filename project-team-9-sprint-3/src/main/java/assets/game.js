@@ -29,7 +29,13 @@ function markHits(board, elementId, surrenderText) {
             className = "hit";
         else if (attack.result === "SUNK"){
             var occupy;
-            numShipsSunk++;
+
+            //Original placement for numShipsSunk - was allowing either board to have a placed ship which would
+            //activate sonar pulse too early
+
+            //numShipsSunk++;
+
+
             //console.log("SUNK");
             //alert(surrenderText);
             className = "sunk";
@@ -125,6 +131,27 @@ function cellClick() {
     } else {
 
         if (sonarIsChecked){
+
+            //get opponent board
+            let opBoard = document.getElementById("opponent");
+
+            //check class list for each cell
+            for (i=0; i<10; i++) {
+                for (j=0; j<10; j++) {
+                    let cell = opBoard.rows[i].cells[j];
+
+                    //if cell is classed as sunk, add to num ships sunk
+                    if (cell.classList.contains("sunk")){
+                        //recounting is okay, just need to go up once since
+                        //ships cannot be un-sunk
+                        numShipsSunk++;
+                    }
+
+                }
+             }
+
+
+            //numShipsSunk now being changed above
             if(numShipsSunk < 1 || numSonarUsed >= 2){
                 alert("Sorry, you can't do that! \nAt least one Enemy Ship must be sunk and \nyou may only use Sonar Pulse twice per game!");
             }
@@ -191,6 +218,7 @@ function place(size) {
 function initGame() {
     makeGrid(document.getElementById("opponent"), false);
     makeGrid(document.getElementById("player"), true);
+
     document.getElementById("run_Sonar").addEventListener("click", function(e){
             sonarIsChecked=true;
     });
