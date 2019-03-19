@@ -216,7 +216,6 @@ function place(size) {
 }
 
 function initGame() {
-    console.log("in init!")
     makeGrid(document.getElementById("opponent"), false);
     makeGrid(document.getElementById("player"), true);
 
