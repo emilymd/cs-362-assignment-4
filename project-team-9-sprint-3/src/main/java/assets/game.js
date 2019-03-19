@@ -197,19 +197,21 @@ function place(size) {
 }
 
 function initGame() {
+    console.log("in init!")
     makeGrid(document.getElementById("opponent"), false);
     makeGrid(document.getElementById("player"), true);
 
     //maybe try getting ship elements sunk here?? then changing num ships sunk here & not above?
 
 
-    if(!isSetup){
+    //if(!isSetup){
 
-        //get all attacks on the player board? or on the opponent board? may need to use
-        //document.getElementById("opponent").attacks.forEach((attack) => {
+
+        /*//get all attacks on the player board? or on the opponent board? may need to use
+        document.getElementById("opponent").attacks.forEach((attack) => {
 
         //going to try first with player board
-        document.getElementById("player").attacks.forEach((attack) => {
+        //document.getElementById("player").attacks.forEach((attack) => {
             let className;
             //check if any attacks are sunk, if yes increment the number of sunk ships
             //no cap needed on sunk ships, as soon as 1 has been sunk then sonar will be activated so no need to worry
@@ -224,7 +226,7 @@ function initGame() {
                 }
 
         });
-    }
+    }*/
 
     document.getElementById("run_Sonar").addEventListener("click", function(e){
             sonarIsChecked=true;
