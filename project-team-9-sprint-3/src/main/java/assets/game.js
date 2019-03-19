@@ -33,7 +33,6 @@ function markHits(board, elementId, surrenderText) {
             //Original placement for numShipsSunk - was allowing either board to have a placed ship which would
             //activate sonar pulse too early
 
-            //added numShipsSunk here, shouldn't be because it can lead to early sonar pulse
             //numShipsSunk++;
 
 
@@ -132,11 +131,19 @@ function cellClick() {
     } else {
 
         if (sonarIsChecked){
+
+            //get opponent board
             let opBoard = document.getElementById("opponent");
+
+            //check class list for each cell
             for (i=0; i<10; i++) {
                 for (j=0; j<10; j++) {
                     let cell = opBoard.rows[i].cells[j];
+
+                    //if cell is classed as sunk, add to num ships sunk
                     if (cell.classList.contains("sunk")){
+                        //recounting is okay, just need to go up once since
+                        //ships cannot be un-sunk
                         numShipsSunk++;
                     }
 
@@ -144,25 +151,7 @@ function cellClick() {
              }
 
 
-            /*//get all attacks on the player board? or on the opponent board? may need to use
-            var opBoard = document.getElementById("opponent");
-            for (var i = 0, row; row = opBoard.row[i]; i++) {
-
-                for(var j = 0, col; col = row.cells[j]; j++){
-                    if(col.classList.contains("sunk")){
-                        //try adding numShipsSunk here
-                        //Intellij requires payment to test javascript so we
-                        //Will need to test manually if we can get game working...
-                        console.log("adding ship to sunk count!");
-                        numShipsSunk++;
-                    }
-
-                }
-
-            }*/
-
-
-        //numShipsSunk now being changed above, not sure if this is actually what we want
+            //numShipsSunk now being changed above
             if(numShipsSunk < 1 || numSonarUsed >= 2){
                 alert("Sorry, you can't do that! \nAt least one Enemy Ship must be sunk and \nyou may only use Sonar Pulse twice per game!");
             }
@@ -230,33 +219,6 @@ function initGame() {
     console.log("in init!")
     makeGrid(document.getElementById("opponent"), false);
     makeGrid(document.getElementById("player"), true);
-
-    //maybe try getting ship elements sunk here?? then changing num ships sunk here & not above?
-
-
-    //if(!isSetup){
-
-
-        /*//get all attacks on the player board? or on the opponent board? may need to use
-        document.getElementById("opponent").attacks.forEach((attack) => {
-
-        //going to try first with player board
-        //document.getElementById("player").attacks.forEach((attack) => {
-            let className;
-            //check if any attacks are sunk, if yes increment the number of sunk ships
-            //no cap needed on sunk ships, as soon as 1 has been sunk then sonar will be activated so no need to worry
-            //about whether or not ships are counted twice
-            if (attack.result === "SUNK"){
-
-                //try adding numShipsSunk here
-                //Intellij requires payment to test javascript so we
-                //Will need to test manually if we can get game working...
-                console.log("adding ship to sunk count!");
-                numShipsSunk++;
-                }
-
-        });
-    }*/
 
     document.getElementById("run_Sonar").addEventListener("click", function(e){
             sonarIsChecked=true;
